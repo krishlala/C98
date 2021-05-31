@@ -33,6 +33,11 @@ function speak() {
     
     synth.speak(utterThis);
     Webcam.attach(camera);
+    
+    setTimeout(function()
+    {
+        take_snapshot();
+    }, 5000);
 }
 
 Webcam.set({
